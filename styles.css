@@ -102,7 +102,7 @@ footer {
 }
 
 .hero {
-  background-image: url(/img/hero.jpg);
+  background-image: url(./img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -127,7 +127,7 @@ footer {
 .leaves::before {
   display: inline-block;
   content: "";
-  background: url(/img/sheet-left.png);
+  background: url(./img/sheet-left.png);
   background-size: cover;
   background-position: center center;
   width: 1.6rem;
@@ -138,7 +138,7 @@ footer {
 .leaves::after {
   display: inline-block;
   content: "";
-  background: url(/img/sheet-right.png);
+  background: url(./img/sheet-right.png);
   background-size: cover;
   background-position: center center;
   width: 1.6rem;
@@ -193,7 +193,7 @@ footer {
 }
 
 .sessions-content div {
-  background-image: url(/img/sessions1.jpg);
+  background-image: url(./img/sessions1.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.5rem;
@@ -288,7 +288,7 @@ footer {
 
 .about-us-img {
   height: 24rem;
-  background: url(/img/sessions.jpg);
+  background: url(./img/sessions.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 0.7rem;
@@ -320,7 +320,7 @@ footer {
 .prices-content-sessions div p:nth-child(2n+1)::before{
   display: inline-block;
   content: "";
-  background: url(/img/sheet-left.png);
+  background: url(./img/sheet-left.png);
   background-size: cover;
   background-position: center;
   width: 0.9rem;
@@ -353,7 +353,7 @@ footer {
 .prices-content-img {
   grid-area: img;
   border-radius: 0.7rem;
-  background: url(/img/certificate.jpg);
+  background: url(./img/certificate.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -380,7 +380,7 @@ footer {
 }
 
 .locations-map {
-  background: url(/img/map.png);
+  background: url(./img/map.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1130,35 +1130,35 @@ footer {
 
 @font-face {
   font-family: "ElMessiriRegular";  
-  src: url(/fonts/ElMessiri-Regular.woff2) format("woff2"); 
+  src: url(./fonts/ElMessiri-Regular.woff2) format("woff2"); 
   font-style: normal; 
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ElMessiriBold";  
-  src: url(/fonts/ElMessiri-Bold.woff2) format("woff2"); 
+  src: url(./fonts/ElMessiri-Bold.woff2) format("woff2"); 
   font-style: normal; 
   font-weight: bold;
 }
 
 @font-face {
   font-family: "ProximaNovaBold";  
-  src: url(/fonts/ProximaNova-Bold.woff2) format("woff2"); 
+  src: url(./fonts/ProximaNova-Bold.woff2) format("woff2"); 
   font-style: normal; 
   font-weight: bold;
 }
 
 @font-face {
   font-family: "ProximaNovaRegular";  
-  src: url(/fonts/ProximaNova-Regular.woff2) format("woff2"); 
+  src: url(./fonts/ProximaNova-Regular.woff2) format("woff2"); 
   font-style: normal; 
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ProximaNovaLight";  
-  src: url(/fonts/ProximaNova-Light.woff2) format("woff2"); 
+  src: url(./fonts/ProximaNova-Light.woff2) format("woff2"); 
   font-style: normal; 
   font-weight: lighter;
 }
