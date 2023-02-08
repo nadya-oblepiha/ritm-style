@@ -1,0 +1,1164 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #162831;
+}
+
+header img {
+  width: 3rem;
+  height: 3rem;
+}
+
+footer {
+  position: relative;
+  height: 5rem;
+  font-family: 'ProximaNovaRegular';
+  font-size: 0.9rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 87.5rem;
+  min-width: 20rem;
+  margin: auto;
+  position: relative;
+  padding-top: 10rem;
+}
+
+.header {
+  height: 10rem;
+  width: inherit;
+  min-width: 20rem;
+  background-color: #162831;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header-menu-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-menu:hover .header-menu-elements {
+  display: flex;
+}
+
+.menu-icon {
+  filter: invert(100%) sepia(0%) saturate(3644%) hue-rotate(151deg) brightness(113%) contrast(113%);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.header-button {
+  width: 12rem;
+  height: 4rem;
+  background-color: #018ABE;
+  color: white;
+  font-family: 'ProximaNovaRegular';
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  order: 2;
+}
+
+.header-links {
+  font-family: 'ProximaNovaLight';
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  margin: 0.4rem;
+}
+
+.header-links:hover {
+  color: #018ABE;
+}
+
+.header-button:hover {
+  background-color: #162831;
+  border: 0.1rem solid #018ABE;
+  color: #018ABE;
+}
+
+.hero {
+  background-image: url(/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 43rem;
+  position: relative;
+  border-radius: 0.7rem;
+  margin-bottom: 8rem;
+}
+
+.hero-title {
+  font-family: 'ElMessiriRegular';
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.leaves::before {
+  display: inline-block;
+  content: "";
+  background: url(/img/sheet-left.png);
+  background-size: cover;
+  background-position: center center;
+  width: 1.6rem;
+  height: 0.8rem;
+  margin-right: 4rem;
+}
+
+.leaves::after {
+  display: inline-block;
+  content: "";
+  background: url(/img/sheet-right.png);
+  background-size: cover;
+  background-position: center center;
+  width: 1.6rem;
+  height: 0.8rem;
+  margin-left: 4rem;
+}
+
+.hero-title::before {
+  filter: brightness(0%) invert(100%) sepia(0%) saturate(3644%) 
+  hue-rotate(151deg) brightness(113%) contrast(113%);
+}
+
+.hero-title::after {
+  filter: brightness(0%) invert(100%) sepia(0%) saturate(3644%) 
+  hue-rotate(151deg) brightness(113%) contrast(113%);
+}
+
+.hero-subtitle {
+  font-family: 'ElMessiriRegular';
+  font-size: 4.3rem;
+  color: white;
+  margin-bottom: -0.8rem;
+}
+
+.hero-name {
+  font-family: 'ElMessiriRegular';
+  font-size: 4.3rem;
+  color: white;
+}
+
+.sessions {
+  width: 100%;
+  height: 58rem;
+}
+
+.sessions-title {
+  font-family: 'ElMessiriRegular';
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+.sessions-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 18rem 18rem;
+  grid-template-areas: "card-1 . ." "card-1 . .";
+  row-gap: 1.2rem;
+  column-gap: 1.2rem;
+}
+
+.sessions-content div {
+  background-image: url(/img/sessions1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: end;
+  transition: 0.3s;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2rem;
+}
+
+.sessions-content div::after {
+  content: "";
+  height: 0.5rem;
+  width: 100%;
+  background-color: #018ABE;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sessions-content div:hover::after {
+  opacity: 1;
+}
+
+.sessions-content a {
+  text-decoration: none;
+  color: white;
+  font-family: 'ElMessiriRegular';
+  font-size: 1.3rem;
+}
+
+.sessions-content div:first-child {
+  grid-area: card-1;
+  background-position: -13rem 0rem;
+}
+
+.about-us {
+  width: 100%;
+  height: 74rem;
+}
+
+.about-us-title {
+  font-family: 'ElMessiriRegular';
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+.about-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 24rem 24rem;
+  width: 80%;
+  row-gap: 5rem;
+  column-gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-us-content p {
+  font-family: 'ProximaNovaLight';
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.about-us-content h3 {
+  font-family: 'ProximaNovaRegular';
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 2.2rem;
+}
+
+.about-us-content div:nth-child(4) {
+  margin-left: 4.5rem;
+}
+
+.about-us-content div:nth-child(1) {
+  margin-right: 4.5rem;
+}
+
+.about-us-img {
+  height: 24rem;
+  background: url(/img/sessions.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.7rem;
+}
+
+.prices {
+  width: 100%;
+  height: 54rem;
+}
+
+.prices-title {
+  font-family: 'ElMessiriRegular';
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+
+.prices-content {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25rem 4rem;
+  grid-template-areas: "sessions img" "sessions signature";
+}
+
+.prices-content-sessions div p:nth-child(2n+1)::before{
+  display: inline-block;
+  content: "";
+  background: url(/img/sheet-left.png);
+  background-size: cover;
+  background-position: center;
+  width: 0.9rem;
+  height: 0.5rem;
+  margin-right: 2rem;
+}
+
+.prices-content-sessions {
+  font-family: 'ProximaNovaLight';
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  width: 80%;
+  padding-top: 15%;
+}
+
+.prices-content-sessions div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.prices-content-sessions p:nth-child(2n){
+  font-family: 'ElMessiriBold';
+}
+
+.prices-content-img {
+  grid-area: img;
+  border-radius: 0.7rem;
+  background: url(/img/certificate.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.prices-content > p{
+  grid-area: signature;
+  color: white;
+  font-family: 'ElMessiriRegular';
+  font-size: 1.3rem;
+  display: flex;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.locations {
+  width: 100%;
+  height: 45rem;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 19.35rem 19.35rem;
+  grid-template-areas: "map ." "map .";
+  row-gap: 1.7rem;
+  column-gap: 3rem;
+}
+
+.locations-map {
+  background: url(/img/map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: map;
+  border-radius: 0.7rem;
+  width: 100%;
+}
+
+.locations-card {
+  background-color: #018ABE;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'ProximaNovaLight';
+  color: white;
+  font-size: 1rem;
+  padding-left: 8%;
+}
+
+.locations-card div {
+  margin-bottom: 1.8rem;
+}
+
+.locations-card img {
+  margin-right: 1.2rem;
+  margin-bottom: -0.35rem;
+}
+
+.locations-card h2 {
+  font-family: 'ElMessiriRegular';
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.locations-button {
+  border-radius: 0.2rem;
+  width: 50%;
+  height: 2.5rem;
+  color: #018ABE;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1600px){
+  footer {
+    font-size: 0.8rem;
+  }
+  .container {
+    width: 68.7rem;
+  }
+  .header-links {
+    font-size: 1rem;
+  }
+  .header {
+    height: 9rem;
+  }
+  .hero {
+    height: 34rem;
+  }
+  .hero-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .leaves::before {
+    width: 1.4rem;
+    height: 0.7rem;
+    margin-right: 3.4rem;
+  }
+  .leaves::after {
+    width: 1.4rem;
+    height: 0.7rem;
+    margin-left: 3.4rem;
+  }
+  .hero-subtitle {
+    font-size: 3.7rem;
+    margin-bottom: -0.9rem;
+  }
+  .hero-name {
+    font-size: 3.7rem;
+  }
+  .sessions {
+    height: 47rem;
+  }
+  .sessions-content {
+    grid-template-rows: 14rem 14rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .sessions-content div {
+    padding: 0.7rem;
+  }
+  .sessions-title {
+    font-size: 2.3rem;
+    margin-bottom: 6.5rem;
+  }
+  .sessions-content a {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+  .sessions-content div:first-child {
+    background-position: -11rem 0rem;
+  }
+  .sessions-content div::after {
+    height: 0.35rem;
+  }
+  .about-us {
+    height: 60rem;
+  }
+  .about-us-title {
+    font-size: 2.3rem;
+    margin-bottom: 6rem;
+  }
+  .about-us-content {
+    grid-template-rows: 19rem 19rem;
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
+  .about-us-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  .about-us-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.9rem;
+  }
+  .about-us-content div:nth-child(4) {
+    margin-left: 3.5rem;
+  }
+  .about-us-content div:nth-child(1) {
+    margin-right: 3.5rem;
+  }
+  .about-us-img {
+    height: 19rem;
+  }
+  .prices {
+    height: 45rem;
+  }
+  .prices-title {
+    font-size: 2.3rem;
+    margin-bottom: 6rem;
+  }
+  .prices-content {
+    grid-template-rows: 22rem 3.5rem;
+  }
+  .prices-content-sessions {
+    font-size: 0.9rem;
+  }
+  .prices-content-sessions div p:nth-child(2n+1)::before{
+    margin-right: 1.5rem;
+  }
+  .prices-content > p{
+    font-size: 1.1rem;
+  }
+  .locations {
+    height: 35rem;
+    grid-template-rows: 15.35rem 15.35rem;
+    row-gap: 1.3rem;
+    column-gap: 2.7rem;
+  }
+  .locations-card {
+    font-size: 0.9rem;
+  }
+  .locations-card div {
+    margin-bottom: 1.2rem;
+  }
+  .locations-card img {
+    margin-right: 1rem;
+  }
+  .locations-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .locations-button {
+    width: 50%;
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px){
+  footer {
+    font-size: 0.7rem;
+  }
+  .container {
+    width: 56.3rem;
+  }
+  .header-button {
+    width: 9rem;
+    font-size: 0.85rem;
+    height: 3.5rem;
+  }
+  .header-links {
+    font-size: 0.8rem;
+  }
+  .header-menu-elements {
+    width: 28.5rem;
+  }
+  .header {
+    height: 8rem;
+  }
+  header img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .hero{
+    height: 28rem;
+    margin-bottom: 7rem;
+  }
+  .hero-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .leaves::before {
+    width: 1rem;
+    height: 0.5rem;
+    margin-right: 3.1rem;
+  }
+  .leaves::after {
+    width: 1rem;
+    height: 0.5rem;
+    margin-left: 3.1rem;
+  }
+  .hero-subtitle {
+    font-size: 3.4rem;
+    margin-bottom: -1rem;
+  }
+  .hero-name {
+    font-size: 3.4rem;
+  }
+  .sessions {
+    height: 38rem;
+  }
+  .sessions-content {
+    grid-template-rows: 11.5rem 11.5rem;
+    row-gap: 0.8rem;
+    column-gap: 0.8rem;
+  }
+  .sessions-title {
+    font-size: 1.6rem;
+    margin-bottom: 5.3rem;
+  }
+  .sessions-content a {
+    font-size: 0.9rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.8rem;
+  }
+  .sessions-content div {
+    padding: 0.5rem;
+  }
+  .sessions-content div:first-child {
+    background-position: -9rem 0rem;
+  }
+  .sessions-content div::after {
+    height: 0.3rem;
+  }
+  .about-us {
+    height: 50rem;
+  }
+  .about-us-title {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+  }
+  .about-us-content {
+    grid-template-rows: 16rem 16rem;
+    row-gap: 3rem;
+    column-gap: 1.5rem;
+  }
+  .about-us-content p {
+    font-size: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+  .about-us-content h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .about-us-content div:nth-child(4) {
+    margin-left: 2.7rem;
+  }
+  .about-us-content div:nth-child(1) {
+    margin-right: 2.7rem;
+  }
+  .about-us-img {
+    height: 16rem;
+  }
+  .prices {
+    height: 38rem;
+  }
+  .prices-title {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+  }
+  .prices-content {
+    grid-template-rows: 18.5rem 3rem;
+  }
+  .prices-content-sessions {
+    font-size: 0.8rem;
+  }
+  .prices-content-sessions div p:nth-child(2n+1)::before{
+    margin-right: 1.5rem;
+    width: 0.8rem;
+    height: 0.4rem;
+  }
+  .prices-content > p{
+    font-size: 1rem;
+  }
+  .locations {
+    height: 28rem;
+    grid-template-rows: 12.1rem 12.1rem;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+  .locations-card {
+    border-radius: 0.6rem;
+    font-size: 0.8rem;
+  }
+  .locations-card div {
+    margin-bottom: 0.8rem;
+  }
+  .locations-card img {
+    margin-right: 0.9rem;
+  }
+  .locations-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  .locations-button {
+    width: 90%;
+    height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .container {
+    width: 44rem;
+  }
+  .header-button {
+    width: 9rem;
+  }
+  .header-menu-elements {
+    width: 24.5rem;
+  }
+  .header-links {
+    margin: 0.2rem;
+  }
+  .header {
+    height: 8rem;
+  }
+  .hero {
+    height: 22rem;
+    margin-bottom: 5.5rem;
+  }
+  .hero-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .leaves::before {
+    margin-right: 2.4rem;
+  }
+  .leaves::after {
+    margin-left: 2.4rem;
+  }
+  .hero-subtitle {
+    font-size: 3rem;
+    margin-bottom: -1.1rem;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .sessions {
+    height: 45rem;
+  }
+  .sessions-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 11rem 11rem 11rem;
+    grid-template-areas: "card-1 card-1" ". ." ". .";
+    row-gap: 0.7rem;
+    column-gap: 0.7rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .sessions-title {
+    font-size: 1.4rem;
+    margin-bottom: 4.2rem;
+  }
+  .sessions-content a {
+    font-size: 0.8rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.7rem;
+  }
+  .sessions-content div:first-child {
+    background-position: 0rem -7rem;
+  }
+  .about-us {
+    height: 31rem;
+  }
+  .about-us-title {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+  .about-us-content {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10rem 10rem;
+    row-gap: 2rem;
+  }
+  .about-us-content p {
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .about-us-content h3 {
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .about-us-content div:nth-child(4) {
+    margin-left: 0rem;
+  }
+  .about-us-content div:nth-child(1) {
+    margin-right: 0rem;
+  }
+  .about-us-img {
+    display: none;
+  }
+  .prices {
+    height: 28rem;
+  }
+  .prices-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .prices-content-img {
+    display: none;
+  }
+  .prices-content {
+    display: block;
+    height: 55%;
+  }
+  .prices-content-sessions {
+    font-size: 0.8rem;
+    height: 100%;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .prices-content-sessions div p:nth-child(2n+1)::before{
+    margin-right: 1.5rem;
+    width: 0.7rem;
+    height: 0.35rem;
+  }
+  .prices-content > p{
+    display: none;
+  }
+  .locations {
+    height: 51rem;
+    grid-template-rows: 32rem 15rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map map" ". .";
+    row-gap: 1.5rem;
+    column-gap: 1.3rem;
+  }
+  .locations-card div {
+    margin-bottom: 1rem;
+  }
+  .locations-card img {
+    margin-right: 1.1rem;
+  }
+  .locations-card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .locations-button {
+    width: 55%;
+    height: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    width: 68vw;
+    padding-top: 8rem;
+  }
+  .header img {
+    order: -1;
+  }
+  .header-menu {
+    width: 4rem;
+  }
+  .menu-icon {
+    display: block;
+    position: fixed;
+  }
+  .header-menu-elements {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 6rem;
+    top: 6.5rem;
+    left: 0.2rem;
+    background-color: #162831;
+  }
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header-button {
+    width: 8.8rem;
+    order: -1;
+    margin-left: 5%;
+  }
+  .header {
+    height: 6rem;
+    padding-top: 0.4rem;
+  }
+  .hero {
+    height: 17rem;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+  }
+  .hero-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .leaves::before {
+    width: 0.9rem;
+    height: 0.4rem;
+    margin-right: 2.3rem;
+  }
+  .leaves::after {
+    width: 0.9rem;
+    height: 0.4rem;
+    margin-left: 2.3rem;
+  }
+  .hero-subtitle {
+    font-size: 2.5rem;
+    margin-bottom: -1.1rem;
+  }
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .sessions {
+    height: 33rem;
+  }
+  .sessions-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8rem 8rem 8rem;
+    grid-template-areas: "card-1 card-1" ". ." ". .";
+    row-gap: 0.7rem;
+    column-gap: 0.7rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .sessions-title {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .sessions-content div {
+    border-radius: 0.5rem;
+  }
+  .sessions-content a {
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .sessions-content div:first-child {
+    background-position: 0rem -4rem;
+  }
+  .sessions-content div::after {
+    height: 0.25rem;
+  }
+  .about-us {
+    height: 30rem;
+  }
+  .about-us-title {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  .about-us-content {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10rem 10rem;
+    row-gap: 2rem;
+  }
+  .about-us-content p {
+    font-size: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .about-us-content h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  .prices {
+    height: 25rem;
+  }
+  .prices-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .prices-content-sessions {
+    font-size: 0.7rem;
+    width: 85%;
+    margin-left: 8%;
+  }
+  .prices-content-sessions div p:nth-child(2n+1)::before{
+    margin-right: 1rem;
+    width: 0.7rem;
+    height: 0.35rem;
+  }
+  .locations {
+    height: 34rem;
+    grid-template-rows: 20rem 13rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map map" ". .";
+    row-gap: 1.4rem;
+    column-gap: 1rem;
+  }
+  .locations-map {
+    border-radius: 0.5rem;
+  }
+  .locations-card {
+    padding-left: 6%;
+    border-radius: 0.5rem;
+  }
+  .locations-card div {
+    margin-bottom: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .locations-card img {
+    margin-right: 0.75rem;
+  }
+  .locations-card h2 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  .locations-button {
+    width: 90%;
+    height: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hero {
+    height: 14rem;
+    margin-bottom: 3rem;
+  }
+  .hero-title {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .leaves::before {
+    width: 0.7rem;
+    height: 0.3rem;
+    margin-right: 2rem;
+  }
+  .leaves::after {
+    width: 0.7rem;
+    height: 0.3rem;
+    margin-left: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: -1.1rem;
+  }
+  .hero-name {
+    font-size: 1.8rem;
+  }
+  .sessions {
+    height: 27.5rem;
+  }
+  .sessions-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6.5rem 6.5rem 6.5rem;
+    grid-template-areas: "card-1 card-1" ". ." ". .";
+    row-gap: 0.7rem;
+    column-gap: 0.7rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .sessions-title {
+    font-size: 1rem;
+    margin-bottom: 2.3rem;
+  }
+  .sessions-content a {
+    font-size: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.6rem;
+  }
+  .sessions-content div:first-child {
+    background-position: 0rem -2rem;
+  }
+  .about-us-title {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .about-us-content {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 13rem 13rem;
+    row-gap: 0rem;
+  }
+  .prices {
+    height: 20rem;
+  }
+  .prices-title {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+  .prices-content-sessions {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .locations {
+    height: 37rem;
+    grid-template-rows: 15rem 9rem 9rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "map" "." ".";
+    row-gap: 1.4rem;
+    column-gap: 1rem;
+  }
+  .locations-card {
+    padding-left: 8%;
+    padding-top: 5%;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-areas: "title ." "button ." "button .";
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: repeat(3, 2.5rem);
+    align-items: start;
+  }
+  .locations-card div {
+    margin-bottom: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .locations-card img {
+    margin-right: 0.75rem;
+  }
+  .locations-card h2 {
+    grid-area: title;
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+  .locations-button {
+    grid-area: button;
+    width: 70%;
+    height: 1.9rem;
+    font-size: 0.6rem;
+    position: relative;
+    top: 2.3rem;
+  }
+}
+
+@font-face {
+  font-family: "ElMessiriRegular";  
+  src: url(/fonts/ElMessiri-Regular.woff2) format("woff2"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ElMessiriBold";  
+  src: url(/fonts/ElMessiri-Bold.woff2) format("woff2"); 
+  font-style: normal; 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";  
+  src: url(/fonts/ProximaNova-Bold.woff2) format("woff2"); 
+  font-style: normal; 
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNovaRegular";  
+  src: url(/fonts/ProximaNova-Regular.woff2) format("woff2"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaLight";  
+  src: url(/fonts/ProximaNova-Light.woff2) format("woff2"); 
+  font-style: normal; 
+  font-weight: lighter;
+}
